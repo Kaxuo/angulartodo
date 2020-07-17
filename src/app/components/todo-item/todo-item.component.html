@@ -1,0 +1,9 @@
+<div [ngClass] ="setClasses()">
+  <p>
+    <!-- add event with parenthese -->
+      <input (change)="onToggle(todo)"type="checkbox" />
+    <!-- todo has to matche what's betweeen bracket , in todo.html -->
+    {{ todo.title }}
+    <button (click)="onDelete(todo)" class="del">x</button>
+  </p>
+</div>

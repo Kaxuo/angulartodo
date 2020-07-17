@@ -1,0 +1,10 @@
+<app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+
+<app-todo-item 
+*ngFor="let item of todos" 
+[todo]="item"
+(deleteTodo)="deleteTodo($event)"
+>
+    <!-- [todo](has to match the input in ts file in todo-item = "name of the for loop on the left , and don't forget to pass it in the ts file as an input" -->
+    <!-- "todo" has to be labbeled as an input ( in todo-item.ts) -->
+</app-todo-item>
